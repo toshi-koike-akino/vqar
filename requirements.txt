@@ -1,0 +1,7 @@
+pennylane
+dataflows
+pandas
+matplotlib
+argparse
+scikit-learn
+tqdm

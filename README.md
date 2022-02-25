@@ -17,10 +17,10 @@ We may use a VQC ansatz, e.g., based on [2-design](https://arxiv.org/abs/2001.00
 An option with skip connection will model residual nonlinear VAR.
 ![vqc](./images/vqar.png)
 
-## Prerequiste
+## Prerequisite
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) for python=3.9.
-We builds VQAR model using [Pennylane](https://pennylane.ai/).
+We build VQAR model using [Pennylane](https://pennylane.ai/).
 ```bash
 pip install pennylane=0.21.0
 pip install matplotlib=3.5.1

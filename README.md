@@ -158,6 +158,7 @@ Optimized VQC circuits:
 Note that we do not guarantee to achieve quantum advantage.
 We do not intend to maintain this project for future.
 
+![slide](./images/vqar.gif)
 
 ## License
 

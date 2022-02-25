@@ -153,7 +153,29 @@ Optimized VQC circuits:
  6: ──RY(-2.51)───────────────────╰Z──RY(-2.06)───┤ ⟨Z⟩ 
 ```
 
-## Support
+# Real QPU Validation
+
+## IBM QPU
+It is straightforward to use a real **quantum computing processor (QPU)** for testing our VQAR.
+For example, we may use [IBM Q Experience](https://pennylaneqiskit.readthedocs.io/en/latest/devices/ibmq.html).
+You may specify the account token via [Pennylane configulation file](https://pennylane.readthedocs.io/en/latest/introduction/configuration.html), and a scpecific backend of real QPU, such as 'ibmq_london'.
+To run our [vqar.py](./vqar.py) on a real quantum computer, you just need to change the device as follows:
+```bash
+pip install pennylane-qiskit=0.21.0 # qiskit plugin
+python vqar.py --dev qiskit.ibmq
+```
+
+## AWS Braket
+
+We can use different backends such as [Amazon braket](https://amazon-braket-pennylane-plugin-python.readthedocs.io/en/latest/).
+For example, we may run as
+```bash
+pip install amazon-braket-pennylane-plugin=1.5.6 # AWS plugin
+python vqar.py --dev braket.aws.qubit
+```
+Further examples and tutorials are found at [amazon-braket-example](https://github.com/aws/amazon-braket-examples) and [README](https://github.com/aws/amazon-braket-sdk-python/blob/main/README.md).
+
+# Support
 
 Note that we do not guarantee to achieve quantum advantage.
 We do not intend to maintain this project for future.
